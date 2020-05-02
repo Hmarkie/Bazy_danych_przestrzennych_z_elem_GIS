@@ -39,7 +39,7 @@
 	FROM lakes lak, airports a WHERE lak.NAMES="Iliamma Lake" a.NAME="AMBLER";
 
 
---7. Napisz zapytanie, które zwróci sumaryczne pole powierzchni poligonów reprezentujących poszczególne typy drzew znajdujących się na obszarze tundry i bagien.
+--Napisz zapytanie, które zwróci sumaryczne pole powierzchni poligonów reprezentujących poszczególne typy drzew znajdujących się na obszarze tundry i bagien.
 	SELECT SUM(trees.AREA_KM2) AS pole FROM tundra, trees, swamp 
 	WHERE Intersects(tundra.Geometry, trees.Geometry) OR Intersects(swamp.Geometry, trees.Geometry);
 
