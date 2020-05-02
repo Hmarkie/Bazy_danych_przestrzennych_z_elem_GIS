@@ -1,0 +1,1 @@
+# Bazy_danych_przestrzennych_z_elem_GIS
